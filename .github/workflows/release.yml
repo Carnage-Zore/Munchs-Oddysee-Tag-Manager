@@ -22,9 +22,9 @@ jobs:
 
       - name: Zip
         run: |
-          zip -r "Munchs Oddysee Tag Manager.zip" munchs_oddysee_tag_manager/
+          zip -r "MunchsOddyseeTagManager.zip" munchs_oddysee_tag_manager/
 
       - name: Create Release
         uses: softprops/action-gh-release@v3
         with:
-          files: "Munchs Oddysee Tag Manager.zip"
+          files: "MunchsOddyseeTagManager.zip"
