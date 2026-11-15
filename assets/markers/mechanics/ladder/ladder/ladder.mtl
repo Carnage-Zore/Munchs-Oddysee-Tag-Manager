@@ -1,0 +1,42 @@
+# Blender 4.2.0 MTL File: 'Base.blend'
+# www.blender.org
+
+newmtl LadderHandGrips
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.041682 0.648380 0.801435
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.025271
+illum 9
+
+newmtl LadderRungs
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl LadderRungsEdge
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl MudStandhere
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd D:/SteamLibrary/steamapps/common/Oddworld Munchs Oddysee/editor/markers/assets/ladder/Klimb Stand Here Tex.png
