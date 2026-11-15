@@ -2075,7 +2075,7 @@ class Actor(PropertyGroup):
                 self.has_radius = True
                 self.has_filename = True
                 self.has_explosion = True
-                self.filename = "./../Mechanics/Mines/xcmet-00lmi01_bv.nif"
+                self.filename = "./../mechanics/mines/xcmet-00lmi01_bv.nif"
             case "freefloatingmine":
                 self.has_position = True
                 self.has_rotation = True
@@ -3863,20 +3863,20 @@ class Actor(PropertyGroup):
         
         builtindata = {
             "touchstone" : {
-                "civilized" :  ".././mechanics/touchstone/ncmet-00tou01_bv.nif",
-                "native" :  ".././mechanics/touchstone/xnmet-00tou01_bv.nif"
+                "civilized" :  "./../mechanics/touchstone/ncmet-00tou01_bv.nif",
+                "native" :  "./../mechanics/touchstone/xnmet-00tou01_bv.nif"
             },
             "hcranepanel" : {
-                "hcranepanel" :  ".././mechanics/munch_control_panel/ncmet-00cpo01_bv.nif",          
+                "hcranepanel" :  "./../mechanics/munch_control_panel/ncmet-00cpo01_bv.nif",          
             },
             "shamancircle" : {
-                "shamancircle" :  ".././effects/shaman_circle/shaman_circle.nif"
+                "shamancircle" :  "./../effects/shaman_circle/shaman_circle.nif"
             },
             "resurrectiontotem" : {
-                "resurrectiontotem" :  ".././mechanics/resurrection_totem/xnmet-00rto01_bv.nif"
+                "resurrectiontotem" :  "./../mechanics/resurrection_totem/xnmet-00rto01_bv.nif"
             },
             "crate" : {
-                "bonepowder" : "./../Mechanics/Carryables/ncmet-00bpc01_bv.nif",
+                "bonepowder" : "./../mechanics/carryables/ncmet-00bpc01_bv.nif",
                 "explosive" : "./../mechanics/crates/ncmet-00ect01_bv.nif",
                 "egg" : "./../mechanics/egg_crate/ncmet-00ecr01_bv.nif"
             },
@@ -4715,25 +4715,25 @@ class Actor(PropertyGroup):
         def update_vendo_builtin(self, context):
             obj = context.object
             match(self.vendo_builtin):
-                case "bounce": self.filename = "./../Mechanics/VendingMachine/bounce_bv.nif"
-                case "aquabounce": self.filename = "./../Mechanics/VendingMachine/aquabounce_vendo_bv.nif"
-                case "energy": self.filename = "./../Mechanics/VendingMachine/energy_bv.nif"
-                case "expresso": self.filename = "./../Mechanics/VendingMachine/expresso_bv.nif"
-                case "healthup": self.filename = "./../Mechanics/VendingMachine/healthup_vendo_bv.nif"
-                case "invisible": self.filename = "./../Mechanics/VendingMachine/invisible_bv.nif"
-                case "klimb": self.filename = "./../Mechanics/VendingMachine/klimb_bv.nif"
-                case "zap": self.filename = "./../Mechanics/VendingMachine/zapvendo_bv.nif"
-                case "natbounce": self.filename = "./../Mechanics/VendingMachine/native_bounce_bv.nif"
-                case "nataquabaounce": self.filename = "./../Mechanics/VendingMachine/native_aquabounce_bv.nif"
-                case "natenergy": self.filename = "./../Mechanics/VendingMachine/native_energy_bv.nif"
-                case "natsobe": self.filename = "./../Mechanics/VendingMachine/native_sobe_bv.nif"
-                case "natexpresso": self.filename = "./../Mechanics/VendingMachine/native_expresso_bv.nif"
-                case "nathealthup": self.filename = "./../Mechanics/VendingMachine/native_healthup_bv.nif"
-                case "natzap": self.filename = "./../Mechanics/VendingMachine/native_zapvendo_bv.nif"
-                case "blitz": self.filename = "./../Mechanics/VendingMachine/blitzpacker_bv.nif"
-                case "saw": self.filename = "./../Mechanics/VendingMachine/saw_vendo_bv.nif"
-                case "snuzi": self.filename = "./../Mechanics/VendingMachine/snuzi_vendo_bv.nif"
-                case "lulu": self.filename = "./../Mechanics/VendingMachine/lulufund_bv.nif"
+                case "bounce": self.filename = "./../mechanics/vendingmachine/bounce_bv.nif"
+                case "aquabounce": self.filename = "./../mechanics/vendingmachine/aquabounce_vendo_bv.nif"
+                case "energy": self.filename = "./../mechanics/vendingmachine/energy_bv.nif"
+                case "expresso": self.filename = "./../mechanics/vendingmachine/expresso_bv.nif"
+                case "healthup": self.filename = "./../mechanics/vendingmachine/healthup_vendo_bv.nif"
+                case "invisible": self.filename = "./../mechanics/vendingmachine/invisible_bv.nif"
+                case "klimb": self.filename = "./../mechanics/vendingmachine/klimb_bv.nif"
+                case "zap": self.filename = "./../mechanics/vendingmachine/zapvendo_bv.nif"
+                case "natbounce": self.filename = "./../mechanics/vendingmachine/native_bounce_bv.nif"
+                case "nataquabaounce": self.filename = "./../mechanics/vendingmachine/native_aquabounce_bv.nif"
+                case "natenergy": self.filename = "./../mechanics/vendingmachine/native_energy_bv.nif"
+                case "natsobe": self.filename = "./../mechanics/vendingmachine/native_sobe_bv.nif"
+                case "natexpresso": self.filename = "./../mechanics/vendingmachine/native_expresso_bv.nif"
+                case "nathealthup": self.filename = "./../mechanics/vendingmachine/native_healthup_bv.nif"
+                case "natzap": self.filename = "./../mechanics/vendingmachine/native_zapvendo_bv.nif"
+                case "blitz": self.filename = "./../mechanics/vendingmachine/blitzpacker_bv.nif"
+                case "saw": self.filename = "./../mechanics/vendingmachine/saw_vendo_bv.nif"
+                case "snuzi": self.filename = "./../mechanics/vendingmachine/snuzi_vendo_bv.nif"
+                case "lulu": self.filename = "./../mechanics/vendingmachine/lulufund_bv.nif"
 
         edit_componentguid: BoolProperty(name="Edit Component GUID", description="Reveal the edit field for the Component GUID for manually setting it",default=False)
 
@@ -4774,7 +4774,7 @@ class Actor(PropertyGroup):
         )
         filename: StringProperty(
             name="Filename", description="",
-            default="./../Mechanics/VendingMachine/bounce_bv.nif",
+            default="./../mechanics/vendingmachine/bounce_bv.nif",
             subtype="FILE_PATH", 
             update=update_filepath
         )
@@ -5330,7 +5330,7 @@ class Actor(PropertyGroup):
         
         filename: StringProperty(
             name="Filename", description="",
-            default="./../Effects/genericparticles.nif",
+            default="./../effects/genericparticles.nif",
             subtype="FILE_PATH", 
             update=update_filepath
         )
