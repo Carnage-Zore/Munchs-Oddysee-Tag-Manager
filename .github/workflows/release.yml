@@ -11,17 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Copy docs into addon folder
+      - name: Copy docs into addons module folder
         run: |
-          cp README.md my_addon/
-          cp LICENSE my_addon/
+          cp README.md munchs_oddysee_tag_manager/
+          cp LICENSE munchs_oddysee_tag_manager/
 
       - name: Zip
         run: |
-          # zip the folder so the archive root is "my_addon/"
-          zip -r my_addon.zip my_addon/
+          zip -r "Munchs Oddysee Tag Manager.zip" munchs_oddysee_tag_manager/
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: my_addon.zip
+          files: "Munchs Oddysee Tag Manager.zip"
