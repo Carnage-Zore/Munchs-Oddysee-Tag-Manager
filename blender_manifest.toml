@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 
-id = "munchs_oddysee_tag_manager"
+id = "Munchs Oddysee Tag Manager"
 version = "1.0.0"
 name = "Munchs Oddysee Tag Manager"
 tagline = "A tag manager for munches oddysee's xin/xrg files."
