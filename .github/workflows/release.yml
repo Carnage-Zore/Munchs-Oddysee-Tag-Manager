@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Copy docs into addon folder
+        run: |
+          cp README.md my_addon/
+          cp LICENSE my_addon/
+
+      - name: Zip
+        run: |
+          # zip the folder so the archive root is "my_addon/"
+          zip -r my_addon.zip my_addon/
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: my_addon.zip
