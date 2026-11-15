@@ -5,7 +5,7 @@ Note this Is a WIP and may not be fully functional.
 
 <h1> Setup </h1>
 
-1. Import and enable the addon in blender.
+1. Download the MunchsOddyseeTagManager.zip from the releases and Import and enable the addon in blender.
 2. In the N menu (the panels on the right of the 3D View Port) there will be a new Catagory: "MO Tag Manager". Open it.
 3. First click Create Xin Scene. This will set up the layout of the scene hierarchy and add some collections for use.
 
